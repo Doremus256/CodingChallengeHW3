@@ -108,8 +108,8 @@ function saveUser() {
 }
 
 function displayLocalStorage() {
-    var user = localStorage.getItem("userName") || "Good Luck!"
-    var score = localStorage.getItem("userScore") || "0"
+    var user = localStorage.getItem("userName") || "Good Luck!   "
+    var score = localStorage.getItem("userScore") || "Score = 0"
     yourScore.innerText = user + score
 }
 
