@@ -21,28 +21,28 @@ let userScore = 0
 let questions = [
     {
         question: "What color is the sky?",
-        answers: ["red", "green", "blue", "kaleidoscope"],
-        answer: 2
+        answers: ["red", "blue", "green", "kaleidoscope"],
+        answer: 1
 
     },
 
     {
-        question: "How Are You?",
-        answers: ["Bad", "Meh", "Super-Good", "Horrible"],
-        answer: 2
-    }
+        question: "How many weeks long is Bootcamp?",
+        answers: ["1000", "5", "15", "12"],
+        answer: 3
+    },
 
     {
-        question: "How Are You?",
-        answers: ["Bad", "Meh", "Super-Good", "Horrible"],
+        question: "Which is NOT one of the internet's 3 main languages?",
+        answers: ["JavaScript", "HTML", "Spanish", "CSS"],
         answer: 2
-    }
+    },
 
     {
-        question: "How Are You?",
-        answers: ["Bad", "Meh", "Super-Good", "Horrible"],
-        answer: 2
-    }
+        question: "At what number do Array Indexes begin?",
+        answers: ["0", "3", "1", "2"],
+        answer: 0
+    },
 ]
 
 startButton.addEventListener("click", startGame)
@@ -73,8 +73,6 @@ function nextQuestion() {
         correctAnswer.innerText = ""
     }
     else {
-
-
         questionElement.innerText = questions[currentQuestion].question
         btn1.innerText = questions[currentQuestion].answers[0]
         btn2.innerText = questions[currentQuestion].answers[1]
